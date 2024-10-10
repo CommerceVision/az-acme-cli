@@ -3,7 +3,8 @@ name: Publish
 on:
   release:
     types: [published]
-
+  workflow_dispatch: ################## REMOVE ME ###################
+  
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
